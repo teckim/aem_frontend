@@ -1,0 +1,15 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+
+$body-font-family: 'Poppins', sans-serif;
+
+$parallax-padding: 0;
+
+$card-border-radius: 8px;
+
+$data-table-expanded-content-box-shadow: "none";
+
+.v-input__icon--append .v-icon.v-icon {
+  font-size: 18px;
+}
+
+@import '~vuetify/src/styles/styles.sass';

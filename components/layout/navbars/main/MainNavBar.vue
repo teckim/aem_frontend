@@ -1,0 +1,65 @@
+<template>
+  <span>
+    <v-app-bar app elevate-on-scroll color="white">
+      <nuxt-link to="/" class="pa-3 d-flex">
+        <img height="36" src="/logos/aem.png">
+      </nuxt-link>
+      <v-spacer />
+      <template v-if="$vuetify.breakpoint.mdAndUp">
+        <main-nav-bar-routes :routes="routes" />
+        <v-spacer />
+        <nav v-if="!$auth.loggedIn">
+          <v-tabs centered hide-slider class="font-weight-bold" height="64">
+            <v-tab nuxt to="/login" :ripple="false">
+              <div>login</div>
+            </v-tab>
+          </v-tabs>
+        </nav>
+        <div v-else-if="$auth.user" class="d-flex align-center" style="height: 64px">
+          <user-menu />
+        </div>
+      </template>
+      <div class="d-md-none d-block px-1">
+        <v-app-bar-nav-icon @click="mainPanel = !mainPanel" />
+      </div>
+    </v-app-bar>
+    <v-navigation-drawer
+      v-model="mainPanel"
+      width="296"
+      mobile-breakpoint="396"
+      right
+      app
+      bottom
+      temporary
+      fixed
+    >
+      <main-panel :routes="routes" />
+    </v-navigation-drawer>
+  </span>
+</template>
+
+<script>
+export default {
+  data: () => ({
+    mainPanel: false,
+    routes: [
+      {
+        title: 'Home',
+        to: '/'
+      },
+      {
+        title: 'Events',
+        to: '/events'
+      },
+      {
+        title: 'Join us',
+        to: '/join'
+      },
+      {
+        title: 'About us',
+        to: '/about-us'
+      }
+    ]
+  })
+}
+</script>

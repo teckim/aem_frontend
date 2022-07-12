@@ -1,0 +1,7 @@
+{
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "vetur.format.defaultFormatter.ts": "prettier-tslint",
+  "vetur.format.enable": false,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": null
+}
