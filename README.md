@@ -1,6 +1,6 @@
 `Vue.js` | `Nuxt.js` | `Vuetify.js`<br>
 
-# AEM API Project
+# AEM Front-End Project
 
 > AEM is a non-profit organization, I built this frontend to make it easy for organizers to manage their events.
 
