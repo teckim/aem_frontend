@@ -1,20 +1,45 @@
-# aemeeting_fronend
+`Vue.js` | `Nuxt.js` | `Vuetify.js`<br>
 
-## Build Setup
+# AEM API Project
 
-```bash
-# install dependencies
-$ npm install
+> AEM is a non-profit organization, I built this frontend to make it easy for organizers to manage their events.
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## Built With
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+- Vue.js
+- Nuxt.js
+- Vuetify.js
 
-# generate static project
-$ npm run generate
-```
+## Live Demos
+_Not deployed yet_
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Getting Started
+
+**Clone the repo into your local machine.**
+
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+`PHP` and `composer` should be installed
+
+### Install
+in the project folder:
+- run `composer update`.
+- create `.env` file based on `.env.example` file.
+- update environment variables with your `MySQL` and `SMTP` configs.
+- run `php artisan migrate:fresh --seed`.
+
+### Usage
+run `php artisan serve`.
+
+## Authors
+
+👤 **Hakim**
+
+- GitHub: [@teckim](https://github.com/teckim)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/baheddi-hakim/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
