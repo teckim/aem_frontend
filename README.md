@@ -21,14 +21,24 @@ _Not deployed yet_
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-`PHP` and `composer` should be installed
+`NPM` and `Node.js` should be installed
 
-### Install
-in the project folder:
-- run `composer update`.
-- create `.env` file based on `.env.example` file.
-- update environment variables with your `MySQL` and `SMTP` configs.
-- run `php artisan migrate:fresh --seed`.
+### Build Setup
+
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
 
 ### Usage
 run `php artisan serve`.
